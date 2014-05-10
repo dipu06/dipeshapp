@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<style type="text/css">
+div.images{
+	margin: 5px;
+	position: relative;
+	
+}
+#image1{
+	position: absolute;
+	top: 0;
+	left: 30%;
+	z-index: 0;
+	height: 200px;
+	width: 200px;
+}
+#image2{
+	position: relative;
+	margin-top: 5%;
+	left: 35%;
+	z-index: +1;
+	height: 200px;
+	width: 200px;
+}
+#image3{
+	position: absolute;
+	left: 40%;
+	margin-top: 10%;
+	z-index: +2;
+	height: 200px;
+	width: 200px;
+}
+</style>
+	<div class="images">
+	<img id="image1" src="car-insurance-23.jpg" onclick="myFunction1()" >
+	
+
+	<element >
+	<script>
+function myFunction1()
+{
+	document.getElementById("image1").style.zIndex="2";
+	document.getElementById("image2").style.zIndex="1";
+	document.getElementById("image3").style.zIndex="0";
+	
+console.log('sdfdsf');
+}
+function myFunction2()
+{
+	document.getElementById("image1").style.zIndex="0";
+	document.getElementById("image2").style.zIndex="2";
+	document.getElementById("image3").style.zIndex="1";
+	
+console.log('sdfdsf');
+}
+function myFunction3()
+{
+	document.getElementById("image1").style.zIndex="0";
+	document.getElementById("image2").style.zIndex="1";
+	document.getElementById("image3").style.zIndex="2";
+	
+console.log('sdfdsf');
+}
+</script>
+	<img id="image2" src="index.jpeg" onclick="myFunction2()" >
+	<img id="image3"src="ronn_motor_scorpion_super_car-wide.jpg" onclick="myFunction3()" >
+	</div>
+</body>
+</html>
